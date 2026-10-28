@@ -1,4 +1,5 @@
 import React from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { BackgroundEffects } from './components/BackgroundEffects'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
@@ -33,6 +34,9 @@ export const App: React.FC = () => {
 
       {/* Footer */}
       <Footer />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   )
 }
